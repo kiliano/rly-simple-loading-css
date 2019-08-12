@@ -20,6 +20,10 @@ Create a div with class "rly-loading-box" before close </body>. Put a class "rly
   position: relative;
 }
 
+.rly-loading:hover {
+  cursor: wait;
+}
+
 /*Background color*/
 .rly-loading:after {
   position: absolute;
