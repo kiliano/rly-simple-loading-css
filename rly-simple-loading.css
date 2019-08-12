@@ -35,7 +35,7 @@ Create a div with class "rly-loading-box" before close </body>. Put a class "rly
   z-index: 1000;
   width: 100%;
   content: " ";
-  min-height: 60px;
+  min-height: 40px;
 }
 
 /*Loading Basic Animation*/
@@ -162,4 +162,19 @@ Create a div with class "rly-loading-box" before close </body>. Put a class "rly
   -o-animation: lds-rolling 1s linear infinite;
   -ms-animation: lds-rolling 1s linear infinite;
   animation: lds-rolling 1s linear infinite;
+}
+
+
+/*Indicativo de Progresso*/
+.rly-loading[rly-progresso]:after {
+  height: 100%;
+  content: attr(rly-progresso)"%";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 75px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
 }
